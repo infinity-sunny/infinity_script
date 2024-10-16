@@ -3,15 +3,15 @@
 # Remove local manifests if they exist
 rm -rf .repo/local_manifests/
 # Initialize ROM manifest
-repo init -u https://github.com/RisingTechOSS/android -b fourteen --git-lfs
+repo init --depth=1 --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/manifest -b QPR3 -g default,-mips,-darwin,-notdefault
 # repo sync
 /opt/crave/resync.sh
 # remove directory
 rm -rf hardware/qcom-caf/sm8150/media
-rm -rf vendor/lineage
+rm -rf vendor/infinity
 # cloning DT
 # device tree
-git clone https://github.com/dpenra-sunny/device_xiaomi_sunny.git --depth 1 -b fourteen device/xiaomi/sunny
+git clone https://github.com/infinity-sunny/device_xiaomi_sunny.git --depth 1 -b fourteen device/xiaomi/sunny
 git clone https://github.com/dpenra-sunny/device_xiaomi_sunny-kernel.git --depth 1 -b fourteen device/xiaomi/sunny-kernel
 git clone https://github.com/AOSPA/android_device_qcom_qssi.git --depth 1 -b uvite device/qcom/qssi
 git clone https://github.com/yaap/device_qcom_common.git --depth 1 -b fourteen device/qcom/common
@@ -31,10 +31,10 @@ git clone https://github.com/cyberknight777/android_packages_apps_DisplayFeature
 git clone https://github.com/KProfiles/android_packages_apps_Kprofiles.git --depth 1 -b main packages/apps/KProfiles
 # source mods
 git clone https://github.com/yaap/hardware_qcom-caf_sm8150_media.git --depth 1 -b fourteen hardware/qcom-caf/sm8150/media
-git clone https://github.com/dpenra-sunny/android_vendor_lineage.git --depth 1 -b fourteen vendor/lineage
+git clone https://github.com/infinity-sunny/vendor_infinity.git --depth 1 -b fourteen vendor/infinity
 # set build environment
 . build/envsetup.sh
 # lunch
-riseup sunny user
+lunch infinity_sunny-user
 # make
-rise b
+mak bacon
