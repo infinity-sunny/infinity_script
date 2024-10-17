@@ -37,4 +37,4 @@ git clone https://github.com/infinity-sunny/vendor_infinity.git --depth 1 -b QPR
 # lunch
 lunch infinity_sunny-user
 # make
-mak bacon
+mka bacon
