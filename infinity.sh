@@ -8,6 +8,7 @@ repo init -u https://github.com/ProjectInfinity-X/manifest -b QPR3 --git-lfs --d
 
 # Synchronize the repo using a crave resync script
 /opt/crave/resync.sh
+/opt/crave/resync.sh
 
 # Remove unneeded or outdated directories for clean-up before the next steps
 rm -rf hardware/qcom-caf/sm8150/media
