@@ -31,7 +31,7 @@ git clone https://github.com/cyberknight777/android_packages_apps_DisplayFeature
 git clone https://github.com/KProfiles/android_packages_apps_Kprofiles.git --depth 1 -b main packages/apps/KProfiles
 # source mods
 git clone https://github.com/yaap/hardware_qcom-caf_sm8150_media.git --depth 1 -b fourteen hardware/qcom-caf/sm8150/media
-git clone https://github.com/infinity-sunny/vendor_infinity.git --depth 1 -b fourteen vendor/infinity
+git clone https://github.com/infinity-sunny/vendor_infinity.git --depth 1 -b QPR3 vendor/infinity
 # set build environment
 . build/envsetup.sh
 # lunch
