@@ -4,7 +4,7 @@
 rm -rf .repo/local_manifests/
 
 # Initialize the ROM manifest from the ProjectInfinity-X repository with specific depth and branch
-repo init --depth=1 --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/manifest -b QPR3 -g default,-mips,-darwin,-notdefault
+repo init -u https://github.com/ProjectInfinity-X/manifest -b QPR3 --git-lfs --depth=1
 
 # Synchronize the repo using a crave resync script
 /opt/crave/resync.sh
