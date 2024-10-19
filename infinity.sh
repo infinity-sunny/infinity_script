@@ -8,7 +8,6 @@ repo init -u https://github.com/ProjectInfinity-X/manifest -b QPR3 --git-lfs --d
 
 # Synchronize the repo using a crave resync script
 /opt/crave/resync.sh
-/opt/crave/resync.sh
 
 # Remove unneeded or outdated directories for clean-up before the next steps
 rm -rf hardware/qcom-caf/sm8150/media
@@ -28,7 +27,7 @@ git clone https://gitlab.com/yaosp/vendor_qcom_common.git --depth 1 -b fourteen 
 git clone https://github.com/yaap/vendor_qcom_opensource_core-utils.git --depth 1 -b fourteen vendor/qcom/opensource/core-utils
 
 # Clone hardware support for Xiaomi
-git clone https://github.com/PixelOS-AOSP/hardware_xiaomi.git --depth 1 -b fourteen hardware/xiaomi
+git clone https://github.com/dpenra-sunny/hardware_xiaomi.git --depth 1 -b fourteen hardware/xiaomi
 
 # Clone prebuilt GCC compilers for ARM and AArch64 architecture (used for building the kernel)
 git clone https://github.com/StatiXOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-elf.git --depth 1 -b 14.0.0 prebuilts/gcc/linux-x86/aarch64/aarch64-elf
